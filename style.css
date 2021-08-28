@@ -1,0 +1,34 @@
+body{
+    background: radial-gradient(#0000004b, #000000c2), url(https://s3.envato.com/files/263146737/pasta7_b274.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.navbar-brand img{
+    width: 8rem;
+}
+.nav-link{
+    color: antiquewhite !important;
+    font-size: 18px;
+    font-weight: 500;
+}
+img{
+    width: 100%;
+}
+.meal-img{
+    height: 16.5rem;
+}
+.error-img{
+    width: 10rem;
+}
+@media only screen and (max-width: 688px) {
+    .navbar-brand img {
+        width: 5.5rem;
+    }
+    .input-group{
+        width: 100% !important;
+    }
+    .meal-img {
+        height: 14.5rem;
+    }
+}
