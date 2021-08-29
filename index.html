@@ -40,7 +40,7 @@
         </div>
     </nav>
 
-    <main>
+    <main class="text-center">
         <section class="search-section pt-0 pt-md-5">
             <h1 class="text-center text-light">Search Your Favourite <span class="text-warning">Food!!</span></h1>
             <div class="input-group mb-3 px-4 w-50 w-md-50 mx-auto py-4">
@@ -48,6 +48,9 @@
                 <button onclick="searchFood()" class="btn btn-outline-success" type="button" id="search-btn">Search</button>
               </div>
         </section>
+        <div class="spinner-border text-primary" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
         <section class="food-display">
             <div class="container">
                 <div class="row">

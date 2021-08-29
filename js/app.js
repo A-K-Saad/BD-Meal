@@ -7,6 +7,7 @@ const searchFood = async () => {
         const response = await fetch(url);
         const data = await response.json();
         displayFood(data.meals);
+        document.querySelector(".spinner-border").style.display="none";
     }
     catch (error) {
         const errorMessage = document.createElement("div");
@@ -33,6 +34,7 @@ const showFood = async () => {
 }
 const displayFood = meals => {
     // mealContainer.innerHTML="";
+        document.querySelector(".spinner-border").style.display="none";
     mealContainer.textContent = "";
     meals.forEach(meal => {
         const mealSingle = document.createElement("div");
@@ -53,10 +55,10 @@ showFood();
 
 //Searching by enter button
 document.getElementById("search-field").addEventListener("keypress", function (event) {
-    if (event.keyCode === 13) {
-        document.getElementById("search-btn").click();
-    }
-    /* if (event.key === "Enter") {
+    /* if (event.keyCode === 13) {
         document.getElementById("search-btn").click();
     } */
+    if (event.key === "Enter") {
+        document.getElementById("search-btn").click();
+    }
 });
